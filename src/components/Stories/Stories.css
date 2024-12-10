@@ -1,0 +1,115 @@
+.complete_stories {
+  width: 95%;
+  margin: 0rem auto;
+  padding: 2rem;
+  /* box-shadow: -7px 2px 2px 2px #e0c9c9; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: whitesmoke;
+}
+
+.story-buttons {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.story-buttons button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  /* border: none; */
+  /* background-color: lightgray; */
+  border-bottom: 2px solid goldenrod;
+  cursor: pointer;
+}
+
+.story-buttons .active {
+  background-color: goldenrod;
+  border-radius: 10px;
+  color: white;
+}
+
+/* Flexbox container for image and text */
+.slider-container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; Align items to the top */
+  gap: 20px; /* Space between image and text */
+  margin-top: 20px;
+}
+
+/* Image on the left side */
+.slider-image-container {
+  flex: 1;
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Text on the right side */
+.slider-text-container {
+  flex: 1;
+  padding: 20px;
+}
+
+/* List style for news points */
+.slider-text-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.complete_list {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  gap: 20px;
+}
+
+.slider-text-container li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+/* Highlight the current active news item */
+.highlighted {
+  font-size: 18px;
+  font-weight: bold;
+  color: goldenrod;
+}
+
+@media screen and (max-width: 1200px) {
+  .complete_stories {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+  }
+
+  .slider-container {
+    flex-direction: column-reverse;
+  }
+
+  .story-buttons {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .complete_stories {
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+
+  .slider-text-container {
+    padding: 10px;
+  }
+
+  .slider-text-container li {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}

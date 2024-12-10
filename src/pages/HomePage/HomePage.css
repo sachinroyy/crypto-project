@@ -1,0 +1,32 @@
+/* Slider Container */
+.logo-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Hides content outside the container */
+  }
+  
+  /* Slider Track */
+  .logo-slider-track {
+    display: flex;
+    animation: scroll 15s linear infinite; /* Infinite scroll animation */
+    gap: 2rem;
+  }
+  
+  /* Individual Logos */
+  /* .logo {
+    width: 100px; 
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+  } */
+  
+  /* Keyframes for Infinite Scroll */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0); /* Start position */
+    }
+    100% {
+      transform: translateX(-50%); /* Slide entire width */
+    }
+  }
+  

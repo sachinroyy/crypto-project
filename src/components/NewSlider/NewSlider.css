@@ -1,0 +1,150 @@
+/* .slider-container {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 10px;
+  background-color: #1e1e1e;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  animation: slide 30s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.token-card {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 3rem;
+}
+
+.token-image {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.token-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: -8px;
+}
+
+.token-name {
+  font-weight: bold;
+}
+
+.token-symbol {
+  color: #aaa;
+}
+
+.token-price {
+  color: #ddd;
+}
+
+.token-change {
+  font-weight: bold;
+}
+
+.token-change.positive {
+  color: green;
+}
+
+.token-change.negative {
+  color: red;
+}
+
+.token-graph {
+  margin-top: 5px;
+  margin-left: -40px;
+} */
+
+.slider-container {
+  overflow: hidden;
+  padding: 0px 10px;
+  /* background-color: #1e1e1e; */
+  /* background-color: #5E65DC; */
+  background-color: #1b1e41;
+  width: 100%;
+}
+
+.slider {
+  display: flex;
+  gap: 5rem;
+  animation: slide 60s linear infinite;
+  width: calc(50 * 15%); /* Adjust the width based on the number of tokens */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.token-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 3rem;
+}
+
+.token-image {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.token-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.token-name {
+  font-weight: bold;
+}
+
+.token-symbol {
+  color: #aaa;
+}
+
+.token-price {
+  color: #ddd;
+  width: 80px;
+}
+
+.token-change {
+  font-weight: bold;
+}
+
+.token-change.positive {
+  color: green;
+}
+
+.token-change.negative {
+  color: red;
+}
+
+.token-graph {
+  margin-top: 5px;
+  margin-left: -40px;
+}

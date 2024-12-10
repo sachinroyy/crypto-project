@@ -1,0 +1,22 @@
+.data_cards {
+  border: 1px solid lightgray;
+  width: 200px;
+  margin-top: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 10px 1.5rem 1.5rem 1.5rem;
+
+  border-radius: 10px;
+}
+.data_cards2 {
+  border: 1px solid lightgray;
+  width: fit-content;
+  margin-top: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  padding: 10px 1.5rem 0px 1.5rem;
+}
+
+
+.cardBoxShadow{
+  box-shadow: 1px -1px 10px 0px;
+}

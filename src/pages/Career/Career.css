@@ -1,0 +1,97 @@
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.careerBg {
+  /* background: linear-gradient(to right, #191b3a 0%, #0f1023 100%); */
+  background-color: #0F1023;
+}
+
+.careerPageJd {
+  width: 100%; /* Adjust based on your layout */
+  max-width: 600px;
+  padding: 20px;
+  color: white; /* White text for contrast */
+  overflow: hidden; /* Clip content to rounded corners */
+
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+@keyframes smoothBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.bounce-animation {
+  animation: smoothBounce 3s ease-in-out infinite;
+}
+
+.formBgColor {
+  background-color: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(4px);
+  box-shadow: 20px 20px 22px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+@media (max-width: 950px) {
+  .formBgColor {
+    backdrop-filter: blur(12px);
+  }
+}
+/* .react-tel-input .country-list {
+  background: #1e1d1d;
+}
+
+.react-tel-input .country-list .country:hover{
+  background: #1e1d1d;
+}
+
+.react-tel-input .form-control {
+  background-color: transparent;
+  padding-left: 26px;
+  width: auto;
+}
+
+.react-tel-input .flag-dropdown {
+  background-color: transparent;
+  width: 60px;
+}
+
+.react-tel-input .selected-flag:hover{
+  background-color: transparent;
+}
+.react-tel-input .selected-flag:active{
+  background-color: transparent;
+} */
+
+.react-tel-input .form-control {
+  width: inherit;
+}
+
+
+.react-tel-input .country-list .country-name{
+  color: black !important;
+}

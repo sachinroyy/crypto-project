@@ -1,0 +1,22 @@
+/* WalletButton.css */
+.wallet-button-class {
+    /* Add custom styles here */
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    /* You can also use Tailwind classes here if configured to apply */
+  }
+
+
+  .wallet-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Higher z-index to ensure it appears above other content */
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+  }

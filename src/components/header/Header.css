@@ -1,0 +1,346 @@
+.header {
+  /* background-color: #111619; */
+  /* background: linear-gradient(to right, #191b3a 0%, #0f1023 100%); */
+  background-color: #0F1023;
+  /* background-image: url('../../assets/Bg1.jpeg'); */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 4rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+}
+
+.select_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.seLect {
+  color: #fabc2c;
+  background: transparent;
+  cursor: pointer;
+}
+
+.advertise {
+  color: #fabc2c;
+}
+
+.mobile_nav {
+  display: none;
+}
+
+/* @media screen and (max-width: 900px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+} */
+
+@media screen and (max-width: 950px) {
+  .header {
+    display: none;
+  }
+  .mobile_nav {
+    background-color: #111619;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+  }
+
+  .dropdown_complete {
+    display: none !important;
+  }
+}
+
+.mobile_logo {
+  width: 200px;
+}
+
+.sidebar_content {
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 84px;
+  left: -100%;
+  z-index: 9;
+  background-color: #1E2046;
+  color: black;
+}
+
+.sidebar_content.show {
+  left: 0; /* Move into view */
+  z-index: 111111;
+}
+
+.sidebar_content_lists {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1.5rem;
+  overflow-y: scroll;
+  font-family: sans-serif;
+  width: 100%;
+}
+
+/* .section_heading {
+  color: #fabc2c;
+  font-weight: 700;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+} */
+
+.dropdown_complete {
+  display: flex;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: relative; /* Position the container relatively for child elements to align properly */
+}
+
+.arrow_of_item {
+  transform: rotate(272deg);
+  margin-top: 3px;
+  transition: transform 0.3s ease;
+}
+
+.drop_item_heading {
+  padding: 10px;
+}
+
+.drop_item_heading:hover .arrow_of_item {
+  transform: rotate(90deg);
+}
+
+.drop_item_heading:hover {
+  background-color: #273036;
+  color: white;
+}
+
+.dropdown_complete_first {
+  position: relative;
+}
+
+.dropdown_complete_first:hover .dropdown_menus {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  position: absolute;
+  top: 100%; /* Attach it directly below the navbar */
+  left: 50%; /* Align from the center horizontally */
+  transform: translateX(-50%); /* Offset the left to truly center */
+  background-color: rgb(10, 10, 10);
+  padding: 2rem;
+  z-index: 999; /* Ensure the dropdown appears on top */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for better visibility */
+  color: white;
+  gap: 8rem;
+}
+
+.dropdown_menus ul {
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap; /* Prevent text from wrapping */
+  gap: 2rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.dropdown_menus ul li {
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.dropdown_menus ul li:hover {
+  text-decoration: underline;
+}
+
+.dropdown_menus {
+  display: none;
+}
+
+/* Responsiveness for screens smaller than 750px */
+@media (max-width: 750px) {
+  .dropdown_complete_first:hover .dropdown_menus {
+    width: 90%; /* Adjust width to fit smaller screens */
+    padding: 1rem;
+  }
+
+  .dropdown_menus ul {
+    gap: 1rem;
+  }
+
+  .dropdown_menus ul li {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 950) {
+  .dropdown_complete {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* .dropdown_complete_first:hover .dropdown_menus {
+    width: 400px;
+  } */
+
+  .dropdown_menus ul {
+    gap: 1rem;
+  }
+
+  .dropdown_menus ul li {
+    font-size: 16px;
+  }
+}
+
+/* CSS FOR RATES SLIDER */
+
+.coin_rates {
+  display: inline-flex; /* Use inline-flex for continuous scrolling */
+  gap: 1.5rem;
+  /* animation: slide 15s linear infinite; Create smooth infinite scroll */
+}
+
+.coin-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: none; /* Prevent items from shrinking */
+  min-width: 80px; /* Set a fixed width for each item */
+}
+
+@media screen and (max-width: 1200px) {
+  .coin-item {
+    min-width: 50px; /* Set a fixed width for each item */
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%); /* Start from the right edge */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the left edge */
+  }
+}
+
+.slider_banner_for_rates_mobile_view {
+  /* width: 100%; Set container width */
+  overflow: hidden; /* Hide overflow */
+  white-space: nowrap; /* Prevent wrapping */
+  display: none;
+  padding: 10px 0px;
+}
+
+.slider_banner_for_rates_desktop_view {
+  /* width: 100%; Set container width */
+  overflow: hidden; /* Hide overflow */
+  white-space: nowrap; /* Prevent wrapping */
+  display: flex;
+  margin: 0rem 2rem;
+}
+
+@media screen and (max-width: 950px) {
+  .slider_banner_for_rates_mobile_view {
+    display: flex;
+    background-color: #0a0606;
+    justify-content: center;
+  }
+
+  .coin_rates {
+    /* display: inline-flex; Use inline-flex for continuous scrolling */
+    gap: 1rem;
+  }
+
+  .slider_banner_for_rates_desktop_view {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .coin-item {
+    min-width: 30px;
+  }
+  .hidden-at-500 {
+    display: none;
+  }
+}
+
+/* wallet styling */
+/* Header blur when modal is open */
+/* .blur-background {
+  filter: blur(4px);
+  pointer-events: none;
+} */
+
+/* Modal overlay to cover the full screen */
+/* .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+} */
+
+/* Modal styling */
+/* .modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+} */
+
+/* Background overlay for modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  z-index: 999; /* Just below the modal itself */
+}
+
+/* Header.css */
+
+/* .no-scroll {
+  overflow: hidden;
+} */
+
+
+
+/* Sidebar drawer transition */
+.sidebar_lists {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+/* .sidebar_lists.max-h-[500px] {
+  max-height: 500px;
+  overflow: auto;
+} */

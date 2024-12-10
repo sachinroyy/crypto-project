@@ -1,0 +1,25 @@
+.NewspageBg{
+    /* background: linear-gradient(to right, #191b3a 0%, #0f1023 100%); */
+    background-color: #0F1023;
+    /* background-image: url('../../assets/Bg1.jpeg'); */
+  }
+
+
+  /* Add this CSS in your News.css or global CSS file */
+.loader {
+  border: 4px solid rgba(0, 0, 255, 0.3); /* Light blue background */
+  border-top: 4px solid #0000ff; /* Blue loader */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

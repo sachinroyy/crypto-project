@@ -1,0 +1,43 @@
+.blogDescPageBg{
+    background: linear-gradient(to right, #191b3a 0%, #0f1023 100%);
+    /* background-image: url('../../assets/Bg1.jpeg'); */
+  }
+
+  .billionCardStyle{
+    background-color: rgba(255 , 255 , 255 , 0.06);
+    backdrop-filter: blur(4px);
+    box-shadow: 20px 20px 22px rgba(0,0,0,0.2);
+    border-radius: 8px;
+  }
+
+  .content_danger h3 {
+    /* background-color: white; */
+    /* color: #757575; */
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .content_danger p {
+    /* background-color: white; */
+    /* color: #757575; */
+    color: white;
+
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .content_danger ul {
+    /* background-color: white; */
+    /* color: #757575; */
+    color: white;
+
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }

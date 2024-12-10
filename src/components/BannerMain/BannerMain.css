@@ -1,0 +1,52 @@
+
+  
+  /* Banner Popup Styles */
+  .banner-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above everything */
+  }
+  
+  .banner-content {
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
+  
+  .banner-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Close Button Styles */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff5a5f;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .close-button:hover {
+    background: #ff1c1f;
+  }
+  

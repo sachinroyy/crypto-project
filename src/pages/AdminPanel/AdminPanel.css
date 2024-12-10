@@ -1,0 +1,21 @@
+/* .admin_heading {
+  font-size: 52px;
+  background: -webkit-linear-gradient(#f0b01a, #02b8b5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.token_heading_first {
+  color: goldenrod;
+  font-size: 32px;
+} */
+
+
+
+.adminPanelbg{
+  background: linear-gradient(to right, #191b3a 0%, #0f1023 100%);
+  /* background-image: url('../../assets/Bg1.jpeg'); */
+}
