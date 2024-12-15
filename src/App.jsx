@@ -40,8 +40,8 @@ import CreateAirdrop from "./pages/CreateAirdrop/CreateAirdrop.jsx";
 import Dummy from "./pages/Career/DummyForm.jsx";
 import Event from "./pages/EventsPage/Event.jsx";
 import Campus from "./pages/Campus/Campus.jsx";
-import ADVERTISEPRIME from'../../front/src/components/Advertise/Advertiseprime.jsx';
-import FIRSTGLOVE from '../../front/src/components/newglove/glove.jsx'
+import Advertiseprime from'../../crypto-project/src/components/Advertise/Advertiseprime.jsx';
+import FIRSTGLOVE from '../src/components/newglove/glove.jsx'
 const App = () => {
 
    const walletAddress = localStorage.getItem("publicKey");
@@ -111,7 +111,7 @@ const App = () => {
         <Route path="/campus" element={<Campus />} />
         <Route path="/GLOVE" element={<FIRSTGLOVE />} />
 
-        <Route path="/Advertiseprime" element={<ADVERTISEPRIME />} />
+        <Route path="/Advertiseprime" element={<Advertiseprime />} />
       </Routes>
       {/* </> */}
 
