@@ -40,7 +40,6 @@ import CreateAirdrop from "./pages/CreateAirdrop/CreateAirdrop.jsx";
 import Dummy from "./pages/Career/DummyForm.jsx";
 import Event from "./pages/EventsPage/Event.jsx";
 import Campus from "./pages/Campus/Campus.jsx";
-import Advertiseprime from '../../crypto-project/src/components/Advertise/Advertiseprime.jsx';
 import  Globe from '../src/components/newglove/glove.jsx'
 const App = () => {
 
@@ -111,7 +110,6 @@ const App = () => {
         <Route path="/campus" element={<Campus />} />
         <Route path="/GLOVE" element={<Globe />} />
 
-        <Route path="/Advertiseprime" element={<Advertiseprime />} />
       </Routes>
       {/* </> */}
 
