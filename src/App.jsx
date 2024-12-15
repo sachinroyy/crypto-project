@@ -16,7 +16,7 @@ import AllTokens from "./pages/AllTokens/AllTokens.jsx";
 import Slider from "./pages/MainSlider/Slider.jsx";
 import Slider2 from "./pages/MainSlider/Slider2.jsx";
 import BlogDesc from "./pages/BlogDesc/BlogDesc.jsx";
-import WalletButton from "./components/Wallet/Wallet.jsx";
+import WalletButton from "./components/Wallet/walletbutton.jsx";
 // import CreateAirdrop from "./pages/CreateAirdrop/CreateAirdrop.jsx";
  
 // import NewAir from './pages/CreateAirdrop/NewAir.jsx'

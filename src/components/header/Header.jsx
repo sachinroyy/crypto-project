@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { data1, data3, airdrops , Features } from "../footer/Footer";
 // import Cancel from "../../assets/cancel.png";
 import { Link } from "react-router-dom";
-import WalletButton from "../Wallet/Wallet";
+import WalletButton from "../Wallet/walletbutton";
 import Dropdown from "./Dropdowns";
 import NewLogo from "../../assets/NewColorLogoWebsite.png";
 import MobileLogo from "../../assets/NewColorLogoWebsite.png";
